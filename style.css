@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    background-color: #082d4b;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+li a {
+    display: block;
+    color: #fff;
+    padding: 15px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+li a.active {
+    background-color: #0011fd75;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+}
+
+.contenedor {
+    margin-left: 15%;
+    padding: 20px;
+    height: 100vh;
+}
+
+h2 {
+    color: #0f04aa;
+    text-align: center;
+}
+
+h3 {
+    color: #333;
+    text-align: center;
+}
+
+h4 {
+    color: #333;
+    text-align: center;
+}
+
+
+p {
+    color: #555;
+    line-height: 1.6;
+}
+
+#precio {
+    color: #FF5733;
+    font-weight: bold;
+}
+
+#fechaVuelo {
+    color: #078526;
+}
+
+@media only screen and (max-width: 600px) {
+    ul {
+        width: 100%;
+    }
+
+    .contenedor {
+        margin-left: 0;
+        padding: 10px;
+    }
+}
